@@ -32,3 +32,5 @@ class ContactCreater extends React.Component {
         );
     }
 }
+
+export deafault ContactCreater;
