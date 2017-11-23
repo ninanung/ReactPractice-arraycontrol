@@ -15,10 +15,10 @@ class Contacts extends React.Component {
         }
     }
     _insertContact = (name, phone) => {
-        let newState = update(this.state, {
-            Contactdata: {
-                $push: [{"name": name, "phone": phone}]
-            }
+        let newState = this.state.Contactdata;
+        newState.push({
+            name: name,
+            phone: phone
         });
         this.setState(newState);
     }
